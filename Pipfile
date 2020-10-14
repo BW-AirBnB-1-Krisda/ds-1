@@ -24,6 +24,7 @@ six = "*"
 soupsieve = "*"
 urllib3 = "*"
 werkzeug = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.8"
