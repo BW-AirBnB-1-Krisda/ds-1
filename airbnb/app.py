@@ -7,6 +7,8 @@ def create_app():
     CORS(app)
     #app.config['CORS_HEADERS']='Content-Type'
 
-    @app.route('/', methods=['POST'])
+    @app.route('/')
     def root():
-        return HELLO
+        return 'hello'
+
+    return app
