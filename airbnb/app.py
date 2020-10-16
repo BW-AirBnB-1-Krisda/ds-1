@@ -21,7 +21,10 @@ def create_app():
         data = pd.DataFrame(info)
         data.columns = ['No','city','state','room_type','security_deposit','guest_included','extra_people','minimum_nights','maximum_nights','review_scores_rating']
         data = data.drop(data.index[0])
-        return data 
+        return data
+    @app.route('/')
+    def hello():
+        return 'Hello world' 
 
 
     @app.route('/predict', methods=['POST','GET'])
