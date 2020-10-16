@@ -14,8 +14,8 @@ from tensorflow.keras import regularizers
 import pandas as pd
 from tensorflow.keras.models import load_model
 
-model = load_model('model.h5')
-with open('vector.pkl', 'rb') as tfidf_pkl: 
+model = load_model('airbnb/model.h5')
+with open('airbnb/vector.pkl', 'rb') as tfidf_pkl: 
     mp = pickle.load(tfidf_pkl)
 
 def vectorize_data(data):

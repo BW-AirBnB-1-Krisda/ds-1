@@ -6,6 +6,7 @@ import pandas as pd
 import csv
 import numpy as np
 from airbnb.prediction import vectorize_data, pre
+
 def create_app():
     '''create and configure instance of our Flask application.'''
     app = Flask(__name__)
@@ -13,7 +14,7 @@ def create_app():
     app.config['CORS_HEADERS']='Content-Type'
     
     def get_data():
-        data_file = open('airbnb/data.csv')
+        data_file = open('airbnb/airbnb/data.csv')
         csv_file = csv.reader(data_file)
         info = []
         for row in csv_file:
@@ -22,6 +23,7 @@ def create_app():
         data.columns = ['No','city','state','room_type','security_deposit','guest_included','extra_people','minimum_nights','maximum_nights','review_scores_rating']
         data = data.drop(data.index[0])
         return data
+    
     @app.route('/')
     def hello():
         return 'Hello world' 
