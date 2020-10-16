@@ -7,4 +7,4 @@
 
 
 To get the price prediction, from the api we need to pass values of parameters in the URL as below
-https://airbnbapi-ds.herokuapp.com/predict?city=NEW%20YORK&room_type=HOTEL%20ROOM&security_deposit=100.0&guests_included=2&mininum_nights=2
+https://airbnbapi-ds.herokuapp.com/predict?city=new%20york&room_type=HOTEL%20ROOM&security_deposit=100&guest_included=2&mininum_nights=2
