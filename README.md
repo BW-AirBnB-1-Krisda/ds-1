@@ -2,9 +2,15 @@
 @app.route('/predict',methods=['POST','GET']) This route is used to predict airbnb price by defining values of each parameter. The model is a CNN model using tensorflow.
 
 city = string
+
 room_type = string
+
+
 security_deposit = float
+
 guest_included = int
+
+
 mininum_nights = int
 
 
