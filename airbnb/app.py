@@ -34,10 +34,10 @@ def create_app():
         city = str(request.args['city'])
         room_type = str(request.args['room_type'])
         security_deposit = float(request.args['security_deposit'])
-        guest_included = int(request.args['guest_included'])
+        guests_included = int(request.args['guests_included'])
         minimum_nights = int(request.args['mininum_nights'])
 
-        predictions = pre(city=city, room_type=room_type, security_deposit=security_deposit,guests_included=guest_included,min_nights=minimum_nights)
+        predictions = pre(city=city, room_type=room_type, security_deposit=security_deposit,guests_included=guests_included,min_nights=minimum_nights)
         return jsonify(predictions)
 
     return app
